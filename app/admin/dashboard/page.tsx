@@ -194,7 +194,7 @@ export default function AdminDashboard() {
                             e.stopPropagation();
                             handleDelete(order._id);
                           }}
-                          className="bg-green-500 text-white px-3 py-1 rounded-lg hover:bg-green-700 transition-all"
+                          className="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-700 transition-all"
                         >
                           Delete
                         </button>
