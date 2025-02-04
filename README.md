@@ -1,37 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Comfortly Admin Dashboard
 
-## Getting Started
+## 📌 Overview
+The **Comfortly Admin Dashboard** is a web-based admin panel built with **Next.js, TypeScript, and Tailwind CSS**. It allows administrators to manage customer orders, update statuses, and view order details in real time. This dashboard is integrated with **Sanity.io** as a backend for content and order management.
 
-First, run the development server:
+## 🚀 Features
+- **Real-time Order Management**: Fetch and display all orders from **Sanity**.
+- **Status Updates**: Admins can change order status (Pending, Shipped, Delivered).
+- **Order Details View**: Click on an order to view its details.
+- **Search & Filters**: Filter orders based on status.
+- **Secure Admin Login**: Protect the dashboard with an admin login system.
+- **Responsive UI**: Fully optimized for desktop and mobile.
+- **Animations & Enhanced UI**: Improved aesthetics with smooth transitions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Tech Stack
+- **Frontend**: Next.js (App Router), TypeScript, Tailwind CSS
+- **Backend**: Sanity.io (CMS & database)
+- **Authentication**: LocalStorage-based admin authentication
+- **UI Enhancements**: Framer Motion for animations, SweetAlert2 for alerts
+
+## 📂 Folder Structure
+```
+comfortly-admin-dashboard/
+│-- app/
+│   ├── components/      # Reusable UI components
+│   ├── admin/
+│   │   ├── dashboard/   # Orders listing & management
+│   │   ├── login.tsx    # Admin login page
+│-- sanity/              # Sanity client setup
+│-- public/              # Static assets
+│-- pages/               # Next.js pages
+│-- styles/              # Global styles
+│-- .next/               # Build output
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Installation & Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/yourusername/comfortly-admin-dashboard.git
+cd comfortly-admin-dashboard
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2️⃣ Install Dependencies
+```sh
+npm install  # or yarn install
+```
 
-## Learn More
+### 3️⃣ Configure Sanity Backend
+- Ensure your **Sanity project** is set up.
+- Update the `sanity.config.ts` with your **Sanity project ID**.
 
-To learn more about Next.js, take a look at the following resources:
+### 4️⃣ Run the Development Server
+```sh
+npm run dev  # or yarn dev
+```
+Access the dashboard at `http://localhost:3000`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔑 Admin Login Credentials
+```
+Email: admin@gmail.com
+Password: admin123
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 Usage Guide
+- **Login**: Navigate to `/admin/login` and enter credentials.
+- **View Orders**: The dashboard displays all customer orders.
+- **Change Order Status**: Select a new status from the dropdown.
+- **Delete Orders**: Click on the delete button to remove an order.
 
-## Deploy on Vercel
+## 🎨 UI Enhancements
+- **Comfortly Theme**: Custom colors, typography, and branding.
+- **Animations**: Smooth transitions using Framer Motion.
+- **Responsive Design**: Optimized for mobile and desktop.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💡 Future Improvements
+- Connect to a main website for centralized data management.
+- Advanced analytics and reports.
+- Role-based authentication for better security.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# comfortly-admin-dashboard" 
+## 🤝 Contributing
+Feel free to submit issues or PRs to enhance this dashboard!
+
+## 📜 License
+This project is **open-source** under the MIT License.
+
